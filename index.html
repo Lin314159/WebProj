@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <title>吉生德业务端隐私政策</title>
+    <style>
+        :root {
+            --bg: #f3f7fb;
+            --surface: rgba(255, 255, 255, 0.92);
+            --surface-strong: #ffffff;
+            --text: #10233d;
+            --muted: #5f7186;
+            --primary: #1d6eea;
+            --primary-deep: #0f4fb4;
+            --line: rgba(16, 35, 61, 0.1);
+            --shadow: 0 20px 60px rgba(17, 53, 97, 0.12);
+            --radius: 22px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background:
+                radial-gradient(circle at top left, rgba(29, 110, 234, 0.14), transparent 32%),
+                radial-gradient(circle at top right, rgba(58, 161, 255, 0.12), transparent 28%),
+                linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+            color: var(--text);
+            font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+            line-height: 1.75;
+        }
+
+        body {
+            min-height: 100vh;
+            padding: calc(24px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom));
+        }
+
+        .page {
+            max-width: 920px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            padding: 32px 24px 28px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, #0f4fb4 0%, #1d6eea 55%, #5db2ff 100%);
+            color: #fff;
+            box-shadow: var(--shadow);
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: auto -60px -80px auto;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            filter: blur(2px);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.14);
+            font-size: 13px;
+            letter-spacing: 0.04em;
+        }
+
+        h1 {
+            margin: 16px 0 10px;
+            font-size: 32px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            margin: 0;
+            max-width: 700px;
+            color: rgba(255, 255, 255, 0.88);
+            font-size: 15px;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 18px;
+        }
+
+        .meta span {
+            display: inline-flex;
+            padding: 7px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.14);
+            font-size: 13px;
+        }
+
+        .content {
+            margin-top: 18px;
+            display: grid;
+            gap: 16px;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(14px);
+            padding: 22px 18px;
+        }
+
+        h2 {
+            margin: 0 0 14px;
+            font-size: 20px;
+            line-height: 1.35;
+        }
+
+        p {
+            margin: 0 0 12px;
+            color: var(--muted);
+            font-size: 15px;
+        }
+
+        p:last-child,
+        ul:last-child,
+        .grid:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--muted);
+        }
+
+        li + li {
+            margin-top: 10px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .item {
+            padding: 16px;
+            border-radius: 18px;
+            background: var(--surface-strong);
+            border: 1px solid var(--line);
+        }
+
+        .item strong {
+            display: block;
+            margin-bottom: 6px;
+            color: var(--text);
+            font-size: 15px;
+        }
+
+        .notice {
+            padding: 16px;
+            border-radius: 18px;
+            background: rgba(29, 110, 234, 0.06);
+            border: 1px solid rgba(29, 110, 234, 0.14);
+            color: var(--text);
+        }
+
+        .footer {
+            margin-top: 18px;
+            text-align: center;
+            color: #7b8ca0;
+            font-size: 13px;
+        }
+
+        a {
+            color: var(--primary-deep);
+            text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            .hero {
+                padding: 40px 34px 34px;
+            }
+
+            .content {
+                gap: 18px;
+            }
+
+            .card {
+                padding: 26px 24px;
+            }
+
+            .grid.two {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+<main class="page">
+    <section class="hero">
+        <div class="eyebrow">吉生德业务端 · 隐私政策</div>
+        <h1>隐私政策</h1>
+        <p>
+            欢迎您使用吉生德业务端。本政策用于说明我们在您使用手机号登录、团队协作、客户管理、
+            订单管理、资质上传、扫码、消息推送、Web 页面访问等功能时，如何处理您的个人信息。
+        </p>
+        <div class="meta">
+            <span>生效日期：2026年3月23日</span>
+            <span>适用产品：吉生德业务端 Android 版</span>
+            <span>客服热线：400-400-7230</span>
+        </div>
+    </section>
+
+    <section class="content">
+        <article class="card">
+            <h2>1. 我们处理哪些信息</h2>
+            <div class="grid two">
+                <div class="item">
+                    <strong>账号与身份信息</strong>
+                    <p>当您登录或使用账号相关功能时，我们可能处理手机号、短信验证码、登录令牌、团队成员信息等。</p>
+                </div>
+                <div class="item">
+                    <strong>团队与业务信息</strong>
+                    <p>在团队管理、客户维护、订单流转、消息通知等功能中，可能处理姓名、岗位、团队名称、客户联系人、联系电话、门店或机构名称、地址、备注等业务信息。</p>
+                </div>
+                <div class="item">
+                    <strong>资质与图片资料</strong>
+                    <p>在资质认证、头像或图片上传场景中，可能处理您主动提交的证照图片、身份证正反面、营业执照、授权书等文件资料。</p>
+                </div>
+                <div class="item">
+                    <strong>设备与日志信息</strong>
+                    <p>为保障服务稳定运行，我们可能处理设备厂商、系统版本、应用版本、网络状态、崩溃或操作日志，以及消息推送标识信息。</p>
+                </div>
+            </div>
+        </article>
+
+        <article class="card">
+            <h2>2. 我们如何使用这些信息</h2>
+            <ul>
+                <li>用于完成手机号验证码登录、身份校验、保持登录状态和账号安全。</li>
+                <li>用于展示和维护团队结构、客户信息、业务进展、订单与审批数据。</li>
+                <li>用于处理您主动发起的图片上传、证照提交、头像设置、扫码识别、PDF 或 H5 内容展示。</li>
+                <li>用于向您发送业务通知、审批提醒、系统消息，并在您授权后启用系统通知。</li>
+                <li>用于问题排查、服务优化、兼容性适配及防范安全风险。</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2>3. 权限申请与对应用途</h2>
+            <div class="grid">
+                <div class="item">
+                    <strong>相机权限</strong>
+                    <p>用于拍摄照片、扫码识别、上传资质或业务图片。您拒绝授权后，相关拍照和扫码功能可能无法使用。</p>
+                </div>
+                <div class="item">
+                    <strong>相册 / 媒体读取权限</strong>
+                    <p>用于从系统相册选择图片、读取您主动选择的媒体文件并完成上传。我们不会在未经您主动操作的情况下批量读取您的相册内容。</p>
+                </div>
+                <div class="item">
+                    <strong>通知权限</strong>
+                    <p>用于向您发送审批、业务和系统消息提醒。关闭该权限后，您仍可进入应用查看相关消息，但可能无法及时接收通知。</p>
+                </div>
+                <div class="item">
+                    <strong>网络权限</strong>
+                    <p>用于与业务服务器进行数据交互，以及加载您主动访问的 H5 页面内容。</p>
+                </div>
+            </div>
+            <div class="notice" style="margin-top: 12px;">
+                本应用代码中未发现直接申请精确定位、通讯录、通话记录、短信读取等敏感权限。若后续版本新增相关能力，我们会同步更新本政策并在必要时单独征得您的授权。
+            </div>
+        </article>
+
+        <article class="card">
+            <h2>4. 第三方服务与功能接入</h2>
+            <p>为实现特定功能，我们接入了部分第三方能力。实际使用时，仅在对应功能被触发或对应设备环境满足条件时才会调用相关服务。</p>
+            <ul>
+                <li>微信开放平台相关能力：用于微信分享等功能。</li>
+                <li>厂商推送服务：包括华为、荣耀、小米、OPPO、vivo 等厂商推送能力，用于消息触达。不同厂商可能会处理必要的设备标识、推送令牌等信息。</li>
+                <li>系统 WebView：用于加载您主动打开的网页内容、隐私政策、用户协议或业务 H5 页面。</li>
+                <li>地图应用唤起：当您主动发起导航时，应用会将目标地址传递给您选择的地图应用，不在本应用内直接采集定位权限。</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2>5. 本地存储与信息保存</h2>
+            <p>为保障登录状态和提升使用体验，我们可能在本地安全存储登录令牌、团队成员基础资料及必要的缓存信息。</p>
+            <p>您注销账号、退出登录或清除应用数据后，相关本地数据将按照产品逻辑被删除、失效或重新建立。</p>
+        </article>
+
+        <article class="card">
+            <h2>6. 信息共享、转让与公开披露</h2>
+            <ul>
+                <li>除为实现产品基本功能、履行法定义务或获得您明确同意外，我们不会向无关第三方出售您的个人信息。</li>
+                <li>在使用消息推送、微信分享、地图跳转等第三方功能时，相关信息会在必要范围内传递给对应服务提供方。</li>
+                <li>如发生合并、分立、资产转让等情形，我们会要求新的持有方继续受本政策约束。</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2>7. 您的权利</h2>
+            <ul>
+                <li>您可以在应用内查看、修改部分账号资料、团队资料或业务资料。</li>
+                <li>您可以关闭通知权限、拒绝相机或相册授权，但对应功能可能受限。</li>
+                <li>您可以通过应用内的账号注销功能申请注销账号。根据项目现有实现，应用已提供账号注销入口。</li>
+                <li>您可通过客服热线或运营方对外联系方式咨询、复制、更正或删除相关个人信息。</li>
+            </ul>
+        </article>
+
+        <article class="card">
+            <h2>8. 未成年人保护</h2>
+            <p>本产品主要面向具备业务合作和团队管理需求的成年人用户。若您为未成年人，请在监护人指导下阅读并决定是否使用本产品。</p>
+        </article>
+
+        <article class="card">
+            <h2>9. 政策更新</h2>
+            <p>随着产品功能、业务规则或法律法规要求变化，我们可能更新本政策。若更新会对您的权利产生重大影响，我们会通过应用内页面、弹窗、公告等方式向您提示。</p>
+        </article>
+
+        <article class="card">
+            <h2>10. 联系我们</h2>
+            <p>如果您对本隐私政策或个人信息保护事项有疑问、意见或建议，可通过以下方式与我们联系：</p>
+            <ul>
+                <li>产品名称：吉生德业务端</li>
+                <li>客服热线：400-400-7230</li>
+                <li>建议您同时提供账号信息、问题描述和联系方式，以便我们尽快处理。</li>
+            </ul>
+        </article>
+    </section>
+
+    <div class="footer">
+        本页面为 HTML5 单文件版本，可直接用于 Web 部署或 Android WebView 加载。
+    </div>
+</main>
+</body>
+</html>
